@@ -23,12 +23,6 @@ function Address () {
         navigate('/Workex');
     };
 
-    const [selectedOption, setSelectedOption] = useState('');
-
-    //To display the selected gender
-    const handleChange = (event) => {
-        setSelectedOption(event.target.value);
-    }
 
     //I route sa previous form inyong back diri
     //Wala ra nako gibutngan kay first form akoa

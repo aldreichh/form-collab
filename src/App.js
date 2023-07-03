@@ -4,8 +4,6 @@ import Workex from './components/Workex';
 import {Routes, Route, Link} from 'react-router-dom';
 
 function App() {
-  const personalData = localStorage.getItem('personalData');
-  const addressData = localStorage.getItem('addressData');
 
   return (
     <div className="App">
