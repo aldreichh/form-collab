@@ -72,7 +72,7 @@ function Home () {
                     
                     <div className=" h-1/4 flex flex-col">
                         <div className="w-3/4 mx-auto flex justify-between">
-                            <button className="w-2/5  bg-blue-300  text-white font-bold py-2 px-6 rounded" type="button" onClick={handleBackClick}>Back</button>
+                            <button className="w-2/5  bg-slate-500 hover:bg-slate-800  text-white font-bold py-2 px-6 rounded" type="button" onClick={handleBackClick}>Back</button>
                             <button className="w-2/5 h-12 bg-blue-800 hover:bg-blue-950 text-white font-bold py-2 px-6 rounded" type="submit">Next</button>
                         </div>
                     </div>                   
