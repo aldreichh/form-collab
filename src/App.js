@@ -2,6 +2,7 @@ import Personal from './components/Personal';
 import Address from './components/Address';
 import Workex from './components/Workex';
 import Home from './components/Home';
+import Confirm from './components/Confirm';
 import {Routes, Route, Link} from 'react-router-dom';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
                 <Route path="/Personal" element={<Personal/>}/>
                 <Route path="/Address" element={<Address/>}/>
                 <Route path="/Workex" element={<Workex/>}/>
+                <Route path="/Confirm" element={<Confirm/>}/>
                 <Route path="*" element={<NotFound/>}/>
               </Routes>
             </div>
