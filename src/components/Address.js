@@ -23,18 +23,26 @@ function Address () {
         navigate('/Workex');
     };
 
+    const [selectedOption, setSelectedOption] = useState('');
+
+    //To display the selected gender
+    const handleChange = (event) => {
+        setSelectedOption(event.target.value);
+    }
+
 
     //I route sa previous form inyong back diri
     //Wala ra nako gibutngan kay first form akoa
     const handleBackClick = () => {
-        navigate('/');
+        navigate('/Personal');
     }
     return (
         <>
-            <div className="w-96 h-3/4 flex flex-col justify-center items-center mx-auto bg-white rounded-2xl drop-shadow-xl">
-                <form className="flex flex-col items-left justify-center w-full no-scrollbar overflow-y-auto" onSubmit={handleFormSubmit}>
-                    <div className="h-1/4 flex flex-col items-left justify-center">
-                        <text className="block text-gray-700 text-2xl font-bold text-center">Address Information</text>
+            <div className="w-full h-full flex flex-col justify-center items-center bg-white">
+            <form className="flex flex-col items-left justify-center w-full no-scrollbar overflow-y-auto" onSubmit={handleFormSubmit}>
+                    <div className="mx-auto mt-4 w-3/4 h-1/4 flex flex-col justify-end">
+                        <text className="font-Raleway block text-gray-700 text-3xl font-bold">Sign up</text>
+                        <text className="font-Raleway block text-gray-700 text-l">Tell us about yourself!</text>
                     </div>    
                     <div className="h-screen flex flex-col justify-center">
                         <label className="w-3/4 mx-auto block text-gray-700 text-sm font-bold mb-5">
@@ -59,10 +67,10 @@ function Address () {
                         </label>
                     </div>              
                     
-                    <div className="h-1/4 flex flex-col justify-center">
+                    <div className=" h-1/4 flex flex-col">
                         <div className="w-3/4 mx-auto flex justify-between">
-                            <button className="bg-sky-500 hover:bg-sky-700  text-white font-bold py-2 px-6 rounded" type="button" onClick={handleBackClick}>Back</button>
-                            <button className="bg-sky-500 hover:bg-sky-700 text-white font-bold py-2 px-6 rounded" type="submit">Next</button>
+                            <button className="w-2/5  bg-blue-800 hover:bg-blue-950  text-white font-bold py-2 px-6 rounded" type="button" onClick={handleBackClick}>Back</button>
+                            <button className="w-2/5 h-12 bg-blue-800 hover:bg-blue-950 text-white font-bold py-2 px-6 rounded" type="submit">Next</button>
                         </div>
                     </div>                   
                 </form>
