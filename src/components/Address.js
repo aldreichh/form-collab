@@ -41,7 +41,7 @@ function Address () {
             <div className="w-full h-full flex flex-col justify-center items-center bg-white">
             <form className="flex flex-col items-left justify-center w-full no-scrollbar overflow-y-auto" onSubmit={handleFormSubmit}>
                     <div className="mx-auto mt-4 w-3/4 h-1/4 flex flex-col justify-end">
-                        <text className="font-Raleway block text-gray-700 text-3xl font-bold">Sign up</text>
+                        <text className="font-Raleway block text-blue-800 text-3xl font-bold">Sign up</text>
                         <text className="font-Raleway block text-gray-700 text-l">Tell us about yourself!</text>
                     </div>    
                     <div className="h-screen flex flex-col justify-center">
